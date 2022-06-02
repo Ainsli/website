@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <style>
+            body{
+                font-family: 'Open Sans', sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #fffae9;
+                overflow-x: hidden;
+            }
+            footer a{
+                text-decoration: none;
+                color: rgb(27, 211, 27);
+                font-size: 21px;
+            }
+            .second-section .title{
+                font-family: 'Just Another Hand', cursive;
+                font-size: 90px;
+                color:rgb(175, 22, 175);
+                margin: 0;
+            }
+            .second-section a{
+                color: #2b2b25;
+            }
+            .text-color{
+                color:rgb(175, 22, 175) ;
+                text-decoration: none;
+            }
+            h1{
+                font-weight: 400;
+                color: white;
+                margin-bottom: 13px;
+                font-size: 4rem;
+                font-family: 'Just Another Hand', cursive;
+            }
+            .second-section > p {
+                margin-left: 250px;
+            }
+            li{
+                float: left;
+            }
+            ul{
+                padding: 0;
+                margin: 29px 0 22px 60px;
+                list-style: none;
+            }
+            @media (max-width:800px){
+                ul{
+                    margin-top: 0;
+                    margin-bottom: 7px;
+                }
+                .logo > img{
+                    height: 100px;
+                }
+                .top-li{
+                    margin-bottom: 20px;
+                }
+            }
+            .donate{
+                transition: all 0.5s ease;
+                transform: scale(1);
+            }
+            .donate:hover{
+                cursor: pointer;
+                transform: scale(1.25);
+                filter: brightness(120%);
+                color: goldenrod;
+            }
+            nav a{
+                font-weight: 600;
+                font-size: 18px;
+                text-decoration: none;
+                display: block;
+                width: 100px;
+                margin-left: 15px;
+                text-align: center;
+                color:white;
+            }
+            a:hover{
+                color: rgb(175, 22, 175);
+                transition: 0.3s ;
+            }
+            .start-section{
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                flex-direction: column;
+                height: 85vh;
+                width: 100%;
+                padding-bottom: 40px;
+                background-image: linear-gradient(115deg, rgba(58,58,158,0.3),rgba(136,136,206,0.3)), url(images/puppys.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            .second-section{
+                padding-top: 50px;
+                padding-bottom: 12rem;
+                text-align: center;
+                width: 100%;
+            }
+            .footer{
+                display: flex;
+                justify-content: center;
+                background-color: #2b2b25;
+                padding-bottom: 50px;
+                color: white;
+                border-top:10px solid rgb(27, 211, 27);
+            }
+            @media (max-width:900px){
+                .footer{
+                    flex-direction: column;
+                    
+                }
+                .first-cal{
+                    width: 100%;
+                }
+            }
+            .copyright-section{
+                padding: 10px;
+                text-align: center;
+                background-color: #fffae9;
+            }
+            .copyright-section > p{
+                margin: 0;
+                color: #af7643;
+            }
+            .first-cal{
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                padding: 20px 55px 20px 0px;
+            }
+            .cal{
+                padding: 22px 55px;
+                text-align: center;
+            }
+            .last-cal{
+                padding: 20px 0px 20px 55px;
+                text-align: center;
+            }
+            strong{
+                color: #af7643;
+                font-size: 18px;
+            }
+            div > p{
+                margin-bottom: 0;
+            }
+            .nav{
+                display: flex;
+                top: 0;
+                left: 0;
+                background-color:rgba(73, 73, 193, 0.4);
+            }
+            .logo > img{
+                position: absolute;
+                height: 81px;
+            }
+            .social{
+                height:25px;
+                color: rgb(175, 22, 175);
+                width: 40px;
+                cursor: pointer;
+                transition: 0.3s ease-in-out;
+            }
+            .social:hover{
+                cursor: pointer;
+                transform: scale(1.25);
+                filter: brightness(120%);
+            }
+            .phone-number{
+                font-family: 'Just Another Hand', cursive;
+                font-size: 40px;
+                color: white;
+                cursor: pointer;
+            }
+            .phone-number:hover{
+                color: rgb(175, 22, 175);
+                transition: 0.3s ease-in;
+            }
+            .location{
+                font-size: 18px;
+                font-weight: 600;
+                font-family: 'Open Sans', sans-serif;
+                color: white;
+            }
+            .start-section > .phone-number{
+                margin: 10px;
+            }
+            .title{
+                font-weight: 400;
+                font-family: 'Just Another Hand', cursive;
+                font-size: 60px;
+                color:rgb(175, 22, 175);
+                margin: 0;
+            }
+            .sub-title{
+                font-family: 'Open Sans', sans-serif;;
+            }
+            .cal-title{
+                margin-top:20px;
+                font-family: 'Just Another Hand', cursive;
+                text-align: center;
+                font-size: 60px;
+                color: rgb(175, 22, 175);
+            }
+            .cal-subtitle{
+                font-size: 21px;
+            }
+            .second-section > p{
+                padding: 10px 0;
+            }
+            .sirvecies{
+                padding: 16px 0.5rem;
+                font-size: 2rem;
+            }
+            hr.solid{
+                border-right: 0.1px solid grey;
+                margin-top: 30px;
+                margin-left: 0;
+                margin-right: 0;
+            }
+            .border{
+                border: 4px solid rgba(rgb(67, 66, 66), rgb(67, 66, 66), rgb(67, 66, 66), 0.3);
+                box-shadow:1px 1px 2px; 
+                width: 300px;
+            }
+            .tile{
+                background-color: white;
+                font-family: 'Just Another Hand', cursive;
+                padding: 3px 0.5rem;
+                font-size: 1rem;
+                text-align: center;
+                text-decoration: none;
+            }
+            .stickers{
+                padding-top: 40px;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(310px,1fr));
+                justify-content: center;
+                gap: 32px;
+            }
+            @media (max-width:600px){
+                .stickers{
+                    margin-left:100px;
+                    padding-top: 40px;
+                    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+                    display: grid;
+                    justify-content: center;
+                    gap:4rem;
+                }
+                .border{
+                    width: 300px;
+                }
+            }
+            .sticker-img{
+                height: 289px;
+                width: 300px;
+                margin-top: 4px;
+            }
+            .stickers p{
+                font-family: 'Just Another Hand', cursive;
+                font-size: 48px;
+                padding-bottom: 10px;
+                margin: 0;
+                color: black;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+            <div class="logo">
+                <img src="images/download.jpg" alt="Doravet4pet logo">
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a class="top-li" href="Doravet4Pet.html">Home</a></li>
+                    <li><a class="top-li" href="AboutUs.html">About us</a></li>
+                    <li><a class="top-li" href="OurTeam.html">Our team</a></li>
+                    <li><a href="Servicies.html">Servicies</a></li>
+                    <li><a class="donate" href="https://www.paypal.com/donate/?hosted_button_id=5SL8Q9GR86FNW" target="_blank">Donate</a></li>
+                    <li><a href="https://www.facebook.com/doravet4pet/photos"><ion-icon class="social" name="logo-facebook"></ion-icon></li></a>
+                </ul>
+            </nav>
+            
+        <section class="start-section">
+            <h1>HERE TO GRANT YOUR PET THE HEALTHY LIFE THEY DESERVE</h1>
+            <p class="phone-number">(0729) 632-468</p>
+            <p class="location">Bulevardul Independenței 4/22, Sighetu Marmației,Maramures 435500</p>
+        </section>
+        </div>
+        <section class="second-section">
+            <h2 class="title">Get to know us</h2>
+            <h2>WE ARE A SMALL CLINIC OWNED BY A FAMILY DEDICATED TO PETS HEALTH AND HAPPYNES</h2>
+            <div class="stickers">
+                <a href="grooming.html" class="border tile"><img src="images/doggywash.jpg" class="sticker-img" alt="grooming"><p >gromming</p></a>
+                <a href="treatments.html" class="border tile"><img src="images/kittycare.jpg" class="sticker-img" alt="wellnes care"><p >Treatments</p></a>
+                <a href="PetShop.html" class="border tile"><img src="images/dog-cute-wait-pet-owner-pet-shop-bangkok-thailand-april-mixed-breed-shih-tzu-pomeranian-poodle-food-cat-91957600.jpg" class="sticker-img" alt="pet shop"><p >pet shop</p></a>
+                <a href="https://www.paypal.com/donate/?hosted_button_id=5SL8Q9GR86FNW" class="border tile"><img src="images/puppys.jpg" class="sticker-img" alt=""><p >donations</p></a>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="first-cal" >
+                <p class="cal-title">Doravet4pet</p>
+                <p> Bl. 2, Bulevardul Independenței 2,</p>
+                <p>Sighetu Marmației 435500</p>
+                <p class="phone-number">(0729) 632-468</p>
+            </div>
+            <hr class="solid">
+            <div class="cal">
+                <p class="cal-title">services</p>
+                <p><a href="Doravet4Pet.html">Home</a></p>
+                <p><a href="Servicies.html">services</a></p>
+                <p><a href="OurTeam.html">Our team</a></p>
+                <p><a href="AboutUs.html">about us</a></p>
+            </div>
+            <hr class="solid">
+            <div class="cal">
+                <p class="cal-title">social</p>
+                <p><a href="">Facebook</a></p>
+            </div>
+            <hr class="solid">
+            <div class="last-cal">
+                <p class="cal-title">hospital hours</p>
+                <p><strong>Mon,Tue,Wed,Thu,Fri:</strong>9:30-13:00/14:00-18:00</p>
+                <p><strong>Sat,Sun:</strong>CLOSED</p>
+            </div>
+        </footer>
+        <section class="copyright-section">
+            <p>copyright stuff</p>
+        </section>
+    </body>
+</html>
