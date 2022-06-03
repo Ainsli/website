@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+    <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <head>
+        <style>
+             body{
+                margin: 0;
+                padding: 0;
+                background-color: #fffae9;
+            }
+            h1{
+                font-weight: 400;
+                font-size: 90px;
+                font-family: 'Just Another Hand', cursive;
+                margin-bottom: 0;
+                color:WHITE;
+            }
+            h2{
+                font-family: 'Open Sans', sans-serif;
+                margin: 0;
+                padding-bottom: 15px;
+            }
+            .subtitle{
+                color: #855023;
+                font-size: 2rem;
+                font-family: 'Open Sans', sans-serif;
+            }
+            p{
+                padding: 4px 0px 26px;
+                font-family: 'Open Sans', sans-serif;
+                margin: 0;
+            }
+            .copyright-section p{
+                padding:0;
+            }
+            li{
+                float: left;
+            }
+            ul{
+                padding: 0;
+                margin: 29px 0 22px 60px;
+                list-style: none;
+            }
+            h3{
+                margin: 0;
+                color: #855023;
+                font-size: 30px;
+                font-weight: 900;
+                font-family: 'Open Sans', Arial;
+            }
+            .donate{
+                transition: all 0.5s ease;
+                transform: scale(1);
+            }
+            .donate:hover{
+                cursor: pointer;
+                transform: scale(1.25);
+                filter: brightness(120%);
+                color: goldenrod;
+            }
+            .nav{
+                overflow: auto;
+                display: flex;
+                top: 0;
+                left: 0;
+                background-color:rgba(73, 73, 193, 0.4);
+            }
+            nav a{
+                font-weight: 600;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 18px;
+                text-decoration: none;
+                display: block;
+                width: 100px;
+                margin-left: 15px;
+                text-align: center;
+                color:white;
+            }
+            nav a:hover{
+                color: rgb(175, 22, 175);
+                transition: 0.2s ease-in;
+            }
+            .logo > img{
+                position: absolute;
+                height: 80px;
+            }
+            .start-section{
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                flex-direction: column;
+                height: 85vh;
+                width: 100%;
+                padding-bottom: 40px;
+                background-image: linear-gradient(115deg, rgba(58,58,158,0.3),rgba(136,136,206,0.3)), url(images/doggywash.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            .social{
+                height:25px;
+                color: rgb(175, 22, 175);
+                width: 40px;
+                cursor: pointer;
+                transition: 0.3s ease-in-out;
+            }
+            .social:hover{
+                cursor: pointer;
+                transform: scale(1.25);
+                filter: brightness(120%);
+            }
+            .phone-number{
+                font-family: 'Just Another Hand', cursive;
+                font-size: 40px;
+                color: rgb(175, 22, 175);
+                cursor: pointer;
+            } 
+            .footer{
+                display: flex;
+                justify-content: center;
+                background-color: #2b2b25;
+                padding-bottom: 50px;
+                color: white;
+                border-top:10px solid rgb(27, 211, 27);
+            }
+            footer a{
+                text-decoration: none;
+                color: rgb(27, 211, 27);
+                font-size: 21px;
+            }
+            
+            .first-cal{
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                padding: 20px 55px 20px 0px;
+            }
+            .copyright-section{
+                padding: 10px;
+                text-align: center;
+                background-color: #fffae9;
+            }
+            strong{
+                color: #af7643;
+                font-size: 18px;
+            }
+            .cal{
+                padding: 22px 55px;
+                text-align: center;
+            }
+            .last-cal{
+                padding: 20px 0px 20px 55px;
+                text-align: center;
+            }
+            .cal-title{
+                font-family: 'Just Another Hand', cursive;
+                text-align: center;
+                font-size: 60px;
+                color: rgb(175, 22, 175);
+            }
+            .container{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                margin: 0px 98px;
+                margin-bottom: 60px;
+            }
+            hr.solid {
+                margin: 20px 0px 40px;
+                border-top: 1px solid rgb(175, 22, 175);
+            }
+            hr.solid{
+                border-right: 0.1px solid grey;
+                margin-top: 30px;
+                margin-left: 0;
+                margin-right: 0;
+            }
+            @media (max-width:700px){
+                ul{
+                    margin-top: 0;
+                    margin-bottom: 10px;
+                }
+                nav a{
+                    margin-left: 28px;
+                }
+                .logo > img{
+                    height: 100px;
+                }
+                .top-li{
+                    margin-bottom: 37px;
+                }
+            }
+            @media (max-width:900px){
+                .footer{
+                    flex-direction: column;
+                    
+                }
+                .first-cal{
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <div class="logo">
+            <img src="images/download.jpg" alt="Doravet4pet logo">
+        </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a class="top-li" href="index.html">Home</a></li>
+                <li><a class="top-li" href="AboutUs.html">About us</a></li>
+                <li><a class="top-li" href="OurTeam.html">Our team</a></li>
+                <li><a href="Servicies.html">services</a></li>
+                <li><a class="donate" href="https://www.paypal.com/donate/?hosted_button_id=5SL8Q9GR86FNW" target="_blank">Donate</a></li>
+                <li><a href="https://www.facebook.com/doravet4pet/"><ion-icon class="social" name="logo-facebook"></ion-icon></li></a>
+            </ul>
+        </nav>
+        <section class="start-section">
+            <h1>CHECK THE GIFT YOUR PET HAS IN STORE FOR YOU</h1>
+        </section>
+        <div>
+            <footer class="footer">
+                <div class="first-cal" >
+                    <p class="cal-title">Doravet4pet</p>
+                    <p> Bl. 2, Bulevardul Independenței 2,</p>
+                    <p>Sighetu Marmației 435500</p>
+                    <p class="phone-number">(0729) 632-468</p>
+                </div>
+                <hr class="solid">
+                <div class="cal">
+                    <p class="cal-title">services</p>
+                    <p><a href="">Home</a></p>
+                    <p><a href="">Services</a></p>
+                    <p><a href="">Our team</a></p>
+                    <p><a href="">about us</a></p>
+                </div>
+                <hr class="solid">
+                <div class="cal">
+                    <p class="cal-title">social</p>
+                    <p><a href="">Facebook</a></p>
+                </div>
+                <hr class="solid">
+                <div class="last-cal">
+                    <p class="cal-title">hospital hours</p>
+                    <p><strong>Mon,Tue,Wed,Thu,Fri:</strong>9:30-13:00/14:00-18:00</p>
+                    <p><strong>Sat,Sun:</strong>CLOSED</p>
+                </div>
+            </footer>
+        </div>
+        <section class="copyright-section">
+            <p>copyright stuff</p>
+        </section>
+    </body>
+</html>
